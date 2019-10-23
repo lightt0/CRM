@@ -1,0 +1,17 @@
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\CRM.Data.dll.config
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\CRM.Data.dll
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\CRM.Data.pdb
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\CRM.Domain.dll
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\EntityFramework.dll
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\CRM.Domain.pdb
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\CRM.Domain.dll.config
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\EntityFramework.xml
+C:\Users\lenovo\source\repos\CRM\CRM.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\lenovo\source\repos\CRM\CRM.Data\obj\Debug\CRM.Data.csprojAssemblyReference.cache
+C:\Users\lenovo\source\repos\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.CopyComplete
+C:\Users\lenovo\source\repos\CRM\CRM.Data\obj\Debug\CRM.Data.dll
+C:\Users\lenovo\source\repos\CRM\CRM.Data\obj\Debug\CRM.Data.pdb
+C:\Users\lenovo\source\repos\CRM\CRM.Data\obj\Debug\CRM.Data.Migrations.Mig.resources
+C:\Users\lenovo\source\repos\CRM\CRM.Data\obj\Debug\CRM.Data.csproj.GenerateResource.cache
