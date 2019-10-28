@@ -10,7 +10,7 @@ namespace CRM.Data
 {
     public class CrmContext:DbContext
     {
-        public CrmContext():base()
+        public CrmContext():base("CRMDB")
         {
 
         }
@@ -18,6 +18,7 @@ namespace CRM.Data
         public DbSet<Agent> agents { get; set; }
         public DbSet<Caracteristique> caracteristiques { get; set; }
         public DbSet<Categorie> categories { get; set; }
+        public DbSet<Ressource> Ressource { get; set; }
 
     }
 }
