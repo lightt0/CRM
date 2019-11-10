@@ -1,0 +1,70 @@
+﻿
+@model webuser.Models.rec
+
+@{
+    ViewBag.Title = "Delete";
+    
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Reclamation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.objet)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.objet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contenu)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.contenu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dateDebut)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dateDebut)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.dateFin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.dateFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
+
+
+
