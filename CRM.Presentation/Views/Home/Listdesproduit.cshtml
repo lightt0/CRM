@@ -1,5 +1,4 @@
 ﻿@model webuser.Models.Categorie
-<!-- Start Search Popup -->
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
@@ -8,13 +7,43 @@
     <title>CRM</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/icon.png
-    <!-- Modernizer js -->
-    <script src="~/Scripts/Script1/vendor/modernizr-3.5.0.min.js"></script>
+    <link rel="apple-touch-icon" href="images/icon.png">
+    <!-- Google font (font-family: 'Roboto', sans-serif; Poppins ; Satisfy) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,600i,700,700i,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <!-- Stylesheets -->
     @Styles.Render("~/template2/css")
+    @Styles.Render("~/template2/css")
+    <link href="~/fonts/bicon.eot">
+    <link href="~/fonts/bicon.svg" />
+    <link href="~/fonts/bicon.ttf" />
+    <link href="~/fonts/bicon.woff" />
+    <link href="~/fonts/fontawesome-webfont-1.eot" />
+    <link href="~/fonts/fontawesome-webfont.eot" />
+    <link href="~/fonts/fontawesome-webfont.svg" />
+    <link href="~/fonts/fontawesome-webfont.ttf" />
+    <link href="~/fonts/fontawesome-webfont.woff" />
+    <link href="~/fonts/fontawesome-webfont.woff2" />
+    <link href="~/fonts/glyphicons-halflings-regular.eot" />
+    <link href="~/fonts/glyphicons-halflings-regular.svg" />
+    <link href="~/fonts/glyphicons-halflings-regular.ttf" />
+    <link href="~/fonts/glyphicons-halflings-regular.woff" />
+    <link href="~/fonts/glyphicons-halflings-regular.woff2" />
+    <link href="~/fonts/Material-Design-Iconic-Font.woff2" />
+    <link href="~/fonts/Simple-Line-Icons.eot" />
+    <link href="~/fonts/Simple-Line-Icons.svg" />
+    <link href="~/fonts/Simple-Line-Icons.ttf" />
+    <link href="~/fonts/Simple-Line-Icons.woff" />
+    <link href="~/fonts/Simple-Line-Icons.woff2" />
+    <link href="~/fonts/slick-1.eot" />
+    <link href="~/fonts/slick.eot" />
+    <link href="~/fonts/slick.svg" />
+    <link href="~/fonts/slick.ttf" />
+    <link href="~/fonts/slick.woff" />
+
 </head>
 <body>
     <!--[if lte IE 9]>
@@ -22,6 +51,7 @@
     <![endif]-->
     <!-- Main wrapper -->
     <div class="wrapper" id="wrapper">
+
         <!-- Header -->
         <header id="wn__header" class="header__area header__absolute sticky__header">
             <div class="container-fluid">
@@ -36,7 +66,7 @@
                     <div class="col-lg-8 d-none d-lg-block">
                         <nav class="mainmenu__nav">
                             <ul class="meninmenu d-flex justify-content-start">
-                                <li class="drop with--one--item"><a href="index.html">Home</a></li>
+                                <li class="drop with--one--item"><a href=@Url.Action("Index", "Home")>Home</a></li>
                                 <li class="drop">
                                     <a href="#">Produit</a>
                                     <div class="megamenu mega03">
@@ -335,7 +365,9 @@
                 <!-- Mobile Menu -->
             </div>
         </header>
-        <div class="brown--color box-search-content search_active block-bg close__top">
+        <!-- //Header -->
+        <!-- Start Search Popup -->
+        <div class="box-search-content search_active block-bg close__top">
             <form id="search_mini_form" class="minisearch" action="#">
                 <div class="field__search">
                     <input type="text" placeholder="Search entire store here...">
@@ -349,297 +381,158 @@
             </div>
         </div>
         <!-- End Search Popup -->
-        <!-- Start Slider area -->
-        <div class="slider-area brown__nav slider--15 slide__activation slide__arrow01 owl-carousel owl-theme">
-            <!-- Start Single Slide -->
-            <div class="slide animation__style10 bg-image--1 fullscreen align__center--left">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="slider__content">
-                                <div class="contentbox">
-                                    <h2>Bonjour <span>vous  </span></h2>
-                                    <h2>etes <span> le </span></h2>
-                                    <h2>bienvenu <span> ici </span></h2>
-                                
-                                </div>
-                            </div>
+        <!-- Start Bradcaump area -->
+        <div class="ht__bradcaump__area bg-image--6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="bradcaump__inner text-center">
+                            <h2 class="bradcaump-title"></h2>
+                            <nav class="bradcaump-content">
+                                <a class="breadcrumb_item" href="index.html"></a>
+                                <span class="brd-separetor"></span>
+                                <span class="breadcrumb_item active"></span>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End Single Slide -->
-            <!-- Start Single Slide -->
-            <div class="slide animation__style10 bg-image--7 fullscreen align__center--left">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="slider__content">
-                                <div class="contentbox">
-                                    <h2>Buy <span>your </span></h2>
-                                    <h2>favourite <span>Book </span></h2>
-                                    <h2>from <span>Here </span></h2>
-                                    <a class="shopbtn" href="#">shop now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Slide -->
         </div>
-        <!-- End Slider area -->
-        <!-- Start BEst Seller Area -->
-        <section class="wn__product__area brown--color pt--80  pb--30">
+        <!-- End Bradcaump area -->
+        <!-- Start Shop Page -->
+        <div class="page-shop-sidebar left--sidebar bg--white section-padding--lg">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section__title text-center">
-                            <h2 class="title__be--2">New <span class="color--theme">Products</span></h2>
-                        </div>
+                    <div class="col-lg-3 col-12 order-2 order-lg-1 md-mt-40 sm-mt-40">
+                        
                     </div>
-                </div>
-                <!-- Start Single Tab Content -->
-                <div class="furniture--4 border--round arrows_style owl-carousel owl-theme row mt--50">
-                    <!-- Start Single Product -->
-                    <!-- liste des produit-->
-                    @foreach (var item in Model.New_Produits)
-                    {
-
-
-                        <div class="product product__style--3">
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                                <div class="product__thumb">
-                                    @{ string path = "~/Content/images/" + @item.image; }
-                                    <a class="first__img" href=@Url.Action("produit", "Home",new { id = item.id })><img src=@Url.Content(path) alt="product image" height="150" width="100"></a>
-                                    <div class="hot__box">
-                                        <span class="hot-label">New Produit</span>
+                    <div class="col-lg-12 col-12 order-1 order-lg-2">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="shop__list__wrapper d-flex flex-wrap flex-md-nowrap justify-content-between">
+                                    <div class="shop__list nav justify-content-center" role="tablist">
+                                        <a class="nav-item nav-link active" data-toggle="tab" href="#nav-grid" role="tab"><i class="fa fa-th"></i></a>
+                                        <a class="nav-item nav-link" data-toggle="tab" href="#nav-list" role="tab"><i class="fa fa-list"></i></a>
                                     </div>
+                                    
+                                   
                                 </div>
-                                <div class="product__content content--center">
-                                    <h4><a href="single-product.html">@Html.DisplayFor(modelItem => item.nom)</a></h4>
-                                    <ul class="prize d-flex">
-                                        <li>@Html.DisplayFor(modelItem => item.prix)</li>
+                            </div>
+                        </div>
+                        <div class="tab__container">
+                            <div class="shop-grid tab-pane fade show active" id="nav-grid" role="tabpanel">
+                                <div class="row">
+                                    <!-- Start Single Product -->
+                                    @foreach (var item in Model.Produit_cat)
+                                    {
+                                      
+                                        <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
+                                            <div class="product__thumb">
+                                                @{ string path = "~/Content/images/" + @item.image; }
+                                                <a class="first__img" href=@Url.Action("produit", "Home",new { id = item.id })><img src=@Url.Content(path) alt="product image" height="250" width="250"></a>
+                                                <div class="hot__box">
+                                                    <span class="hot-label">@Html.DisplayFor(modelItem => item.categorieFK)</span>
+                                                </div>
+                                            </div>
+                                            <div class="product__content content--center">
+                                                <h4>
+                                                    <a href="single-product.html">
+                                                        @Html.DisplayFor(modelItem => item.nom)
+                                                    <br /> <br />
+                                                    <i class="icon-eye"> @{@Html.DisplayFor(modelItem => item.vu)} </i>
+                                                </a>
+                                                </h4>
+                                                <ul class="prize d-flex">
+                                                    <li>@Html.DisplayFor(modelItem => item.prix) dinar </li>
+                                                    
+                                                </ul>
+                                                <div class="action">
+                                                    <div class="actions_inner">
+                                                        <ul class="add_to_links">
+                                                            <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
+                                                            <li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
+                                                            <li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
+                                                            <li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product__hover--content">
+                                                    <ul class="rating d-flex">
+                                                        <li class="on"><i class="fa fa-star-o"></i></li>
+                                                        <li class="on"><i class="fa fa-star-o"></i></li>
+                                                        <li class="on"><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                        <li><i class="fa fa-star-o"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>}
+                                  
+                                    
+                                    <!-- End Single Product -->
+                                    <!-- Start Single Product -->
+                                    
+                                    <!-- End Single Product -->
+                                </div>
+                             
 
-                                    </ul>
-                                    <div class="action">
-                                        <div class="actions_inner">
-                                            <ul class="add_to_links">
-                                                <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                <li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
-                                                <li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
-                                                <li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
-                                            </ul>
+                            </div>
+                            <div class="shop-grid tab-pane fade" id="nav-list" role="tabpanel">
+                                <div class="list__view__wrapper">
+                                    <!-- Start Single Product -->
+                                    @foreach (var item in Model.Produit_cat)
+                                    {
+
+                                        <div class="list__view">
+                                            <div class="thumb">
+                                                @{ string path = "~/Content/images/" + @item.image; }
+                                                <a class="first__img" href=@Url.Action("produit", "Home",new { id = item.id })><img src=@Url.Content(path) alt="product images" height="400" width="250"></a>
+                                            </div>
+                                            <div class="content">
+                                                <h2><a href="single-product.html">@Html.DisplayFor(modelItem => item.nom)</a></h2>
+                                                <ul class="rating d-flex">
+                                                    <li class="on"><i class="fa fa-star-o"></i></li>
+                                                    <li class="on"><i class="fa fa-star-o"></i></li>
+                                                    <li class="on"><i class="fa fa-star-o"></i></li>
+                                                    <li class="on"><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                    <li><i class="fa fa-star-o"></i></li>
+                                                </ul>
+                                                <ul class="prize__box">
+                                                    <li>@{@Html.DisplayFor(modelItem => item.prix)} dinar</li>
+
+                                                </ul>
+                                                <ul class="prize__box">
+                                                    <li><i class="icon-eye"> @{@Html.DisplayFor(modelItem => item.vu)} </i></li>
+
+                                                </ul>
+
+                                                <p>@{@Html.Raw(item.description)}</p>
+                                                <ul class="cart__action d-flex">
+                                                    <li class="cart"><a href="cart.html">Add to cart</a></li>
+                                                    <li class="wishlist"><a href="cart.html"></a></li>
+                                                    <li class="compare"><a href="cart.html"></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
+                                    }
+                                        <!-- End Single Product -->
+                                        <!-- Start Single Product -->
+                                        
+                                        <!-- End Single Product -->
+                                        <!-- Start Single Product -->
+                                  
+                                        <!-- End Single Product -->
+                                        <!-- Start Single Product -->
+                                       
+                                        <!-- End Single Product -->
+                                        <!-- Start Single Product -->
+                                      
+                                        <!-- End Single Product -->
                                     </div>
-                                    <form id="form_rating">
-                                        <div class="product__hover--content">
-                                            <ul class="rating d-flex">
-                                                <li class="ratings"><i class=" fa fa-star-o" data-value="1"></i></li>
-                                                <li class="ratings"><i class="rating fa fa-star-o" data-value="2"></i></li>
-                                                <li class="ratings"><i class=" rating fa fa-star-o" data-value="3"></i></li>
-                                                <li class="ratings"><i class="fa fa-star-o" data-value="4"></i></li>
-                                                <li class="ratings"><i class="fa fa-star-o" data-value="5"></i></li>
-
-                                            </ul>
-                                            <input type="hidden" name="Rating" id="ratingsValue" />
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                    <script>
-                        $(".ratings").hover(function () {
-                            $(".ratings").removeClass("on")
-                            $(this).addClass("on")
-                            $(this).prevAll(".ratings").addClass("on")
-                            
-                            
-                        });
-                        $(".rating").click(function () {
-                           
-                            var starvalue = $(this).attr("data-value");
-                            $("#ratingsValue").val(starvalue);
-                        });
-
-                    </script>
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-
-                </div>
-                <!-- End Single Tab Content -->
-            </div>
-        </section>
-        <!-- Start BEst Seller Area -->
-        <!-- Start NEwsletter Area -->
-        <section class="wn__product__area brown--color pt--80  pb--30">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section__title text-center">
-                            <h2 class="title__be--2">TOP VIEW <span class="color--theme">Products</span></h2>
-                        </div>
-                    </div>
-                </div>
-                <!-- Start Single Tab Content -->
-                <div class="furniture--4 border--round arrows_style owl-carousel owl-theme row mt--50">
-                    <!-- Start Single Product -->
-                    <!-- liste des produit-->
-                    @foreach (var item in Model.Produit_TOP_View)
-                    {
-
-
-                        <div class="product product__style--3">
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                                <div class="product__thumb">
-                                    @{ string path = "~/Content/images/" + @item.image; }
-                                    <a class="first__img" href=@Url.Action("produit", "Home",new { id = item.id })><img src=@Url.Content(path) alt="product image" height="150" width="100"></a>
-                                    <div class="hot__box">
-                                        <span class="hot-label">New Produit</span>
-                                    </div>
-                                </div>
-                                <div class="product__content content--center">
-                                    <h4><a href="single-product.html">@Html.DisplayFor(modelItem => item.nom)</a></h4>
-                                    <ul class="prize d-flex">
-                                        <li>@Html.DisplayFor(modelItem => item.prix)</li>
-
-                                    </ul>
-                                    <div class="action">
-                                        <div class="actions_inner">
-                                            <ul class="add_to_links">
-                                                <li><a class="cart" href="cart.html"><i class="bi bi-shopping-bag4"></i></a></li>
-                                                <li><a class="wishlist" href="wishlist.html"><i class="bi bi-shopping-cart-full"></i></a></li>
-                                                <li><a class="compare" href="#"><i class="bi bi-heart-beat"></i></a></li>
-                                                <li><a data-toggle="modal" title="Quick View" class="quickview modal-view detail-link" href="#productmodal"><i class="bi bi-search"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product__hover--content">
-                                        <ul class="rating d-flex">
-                                            <li><i class="fa fa-star-o"></i></li>
-                                            <li><i class="fa fa-star-o"></i></li>
-                                            <li><i class="fa fa-star-o"></i></li>
-                                            <li><i class="fa fa-star-o"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    }
-
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-                    <!-- Start Single Product -->
-
-                </div>
-                <!-- End Single Tab Content -->
-            </div>
-        </section>
-        <section class="wn__newsletter__area bg-image--2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 offset-lg-5 col-md-12 col-12 ptb--150">
-                        <div class="section__title text-center">
-                            <h2>Stay With Us</h2>
-                        </div>
-                        <div class="newsletter__block text-center">
-                            <p>Subscribe to our newsletters now and stay up-to-date with new collections, the latest lookbooks and exclusive offers.</p>
-                            <form action="#">
-                                <div class="newsletter__box">
-                                    <input type="email" placeholder="Enter your e-mail">
-                                    <button>Subscribe</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End NEwsletter Area -->
-        <!-- Start Best Seller Area -->
-        <!-- Start BEst Seller Area -->
-        <!-- Start Recent Post Area -->
-        <section class="wn__recent__post bg--gray ptb--80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section__title text-center">
-                            <h2 class="title__be--2">Our <span class="color--theme">Blog</span></h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid alteration in some ledmid form</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt--50">
-                    <div class="col-md-6 col-lg-4 col-sm-12">
-                        <div class="post__itam">
-                            <div class="content">
-                                <h3><a href="blog-details.html">International activities of the Frankfurt Book </a></h3>
-                                <p>We are proud to announce the very first the edition of the frankfurt news.We are proud to announce the very first of  edition of the fault frankfurt news for us.</p>
-                                <div class="post__time">
-                                    <span class="day">Dec 06, 18</span>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li><a href="#"><i class="bi bi-love"></i>72</a></li>
-                                            <li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
-                        <div class="post__itam">
-                            <div class="content">
-                                <h3><a href="blog-details.html">Reading has a signficant info  number of benefits</a></h3>
-                                <p>Find all the information you need to ensure your experience.Find all the information you need to ensure your experience . Find all the information you of.</p>
-                                <div class="post__time">
-                                    <span class="day">Mar 08, 18</span>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li><a href="#"><i class="bi bi-love"></i>72</a></li>
-                                            <li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-sm-12">
-                        <div class="post__itam">
-                            <div class="content">
-                                <h3><a href="blog-details.html">The London Book Fair is to be packed with exciting </a></h3>
-                                <p>The London Book Fair is the global area inon marketplace for rights negotiation.The year  London Book Fair is the global area inon forg marketplace for rights.</p>
-                                <div class="post__time">
-                                    <span class="day">Nov 11, 18</span>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li><a href="#"><i class="bi bi-love"></i>72</a></li>
-                                            <li><a href="#"><i class="bi bi-chat-bubble"></i>27</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End Recent Post Area -->
-        <!-- Best Sale Area -->
-        <!-- Best Sale Area Area -->
+        </div>
