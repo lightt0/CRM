@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+     <h3>Liste des Offres </h3>
+    <table cellpadding="2" cellspacing="2" border="1" >
+        <tr>
+           
+            <th>nom</th>
+            <th>nomsousoffre</th>
+            <th>description</th>
+            <th>prix</th>
+
+        </tr>
+        @foreach(var OffreModel in ViewBag.listOffres)
+        {
+          <tr>
+            <td><span class="Offre_name">@OffreModel.nom</span></td>
+            <td>@OffreModel.nomsousoffre</td>
+            <td>@OffreModel.description</td>
+            <td>@OffreModel.prix</td>
+        </tr>
+        }
+
+           </table> 
+    <br/></br>
+    <a href="@Url.Action("ExportPDF","OffrePDf")">EXPORT PDF</a>
+</body>
+</html>

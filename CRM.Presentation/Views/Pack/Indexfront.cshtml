@@ -1,0 +1,49 @@
+﻿@model IEnumerable<webuser.Models.PackModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Consulter les Packs</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Nom Pack
+        </th>
+        <th>
+            Description
+        </th>
+
+        <th>
+            Prix
+        </th>
+
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.description)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.prix)
+            </td>
+
+
+            <td>
+             
+            </td>
+        </tr>
+    }
+
+</table>
+            

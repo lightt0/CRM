@@ -1,0 +1,53 @@
+﻿@model IEnumerable<webuser.Models.OffreModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+            <h2>Consulter les Listes des Offres </h2>
+
+
+
+            <table class="table">
+                <tr>
+                    <th>
+                        Nom offre
+                    </th>
+                    <th>
+                        Nom sous offre
+                    </th>
+                    <th>
+                        Prix
+                    </th>
+
+                    <th>
+                        Description
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nom)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.nomsousoffre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.prix)
+                        </td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.description)
+                        </td>
+
+                    </tr>
+
+                }
+
+
+            </table>
+          
